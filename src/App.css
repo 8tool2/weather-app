@@ -44,7 +44,6 @@ body {
 
 @media (max-width: 768px) {
   .center {
-    width: 90%;
     max-width: 90%; /* Adjust maximum width for smaller screens */
   }
 }
