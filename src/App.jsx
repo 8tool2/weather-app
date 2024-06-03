@@ -47,7 +47,8 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="center">
+      <h1>Not your Tropical</h1> 
       <h1>Weather App</h1>
       <form onSubmit={handleSubmit}>
         <input
@@ -55,8 +56,9 @@ const App = () => {
           value={city}
           onChange={(e) => setCity(e.target.value)}
           placeholder="Enter city name"
+          style={{ width: "100%", maxWidth: "300px", fontSize: "16px", padding: "10px", border: "1px solid #ccc", borderRadius: "5px" }} // Adjusted width for input
         />
-        <button type="submit">Get Weather</button>
+        <button type="submit" style={{ fontSize: "20px", padding: "10px 20px", margin: "10px 0", backgroundColor: "#007bff", color: "#fff", border: "none", borderRadius: "5px" }}>Get Weather</button>
       </form>
       {error && <p>{error}</p>}
       {weatherData ? (
